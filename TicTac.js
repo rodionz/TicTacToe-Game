@@ -7,7 +7,13 @@ $('table').hide();
 
 $( "#dialog" ).dialog({
 
-    dialogClass: "no-close"
+    dialogClass: "no-close",
+      width: 250,
+      height: 75
+  
+
+
+  
 });
 
 
