@@ -5,7 +5,10 @@ $(function(){
 $('table').hide();
 
 
-$( "#dialog" ).dialog();
+$( "#dialog" ).dialog({
+
+    dialogClass: "no-close"
+});
 
 
 
@@ -20,7 +23,7 @@ $(this).text('X');
 
 $("#dialog").click(function(){
 
-$(this).close();
+$(this).dialog( "close");
 $('table').show();
 
 });

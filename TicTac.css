@@ -16,7 +16,14 @@ table{
   
 }
 
+#dialog{
+  border: 1px black solid;
+  background-color: #cc9966;
+}
 
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
 
 #one{
 
