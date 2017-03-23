@@ -2,6 +2,9 @@
 
 $(function(){
 
+$('table').hide();
+
+
 $( "#dialog" ).dialog();
 
 
@@ -15,6 +18,12 @@ $(this).text('X');
 });
 
 
+$("#dialog").click(function(){
+
+$(this).close();
+$('table').show();
+
+});
 
 
 
