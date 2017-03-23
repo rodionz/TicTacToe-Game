@@ -1,0 +1,65 @@
+body{
+text-align: center;
+
+}
+
+table{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -170px 0 0 -170px;
+  width: 350px;
+  height: 350px;
+  padding: 20px;
+  table-layout: fixed;
+  
+}
+
+
+
+#one{
+
+border-bottom: 1px black solid;
+border-right: 1px black solid;
+}
+
+#two{
+border-bottom: 1px black solid;
+border-right: 1px black solid;
+
+}
+
+#three{
+
+border-bottom: 1px black solid;
+}
+
+
+#four{
+border-bottom: 1px black solid;
+border-right: 1px black solid;
+
+}
+
+#five{
+
+border-bottom: 1px black solid;
+border-right: 1px black solid;
+}
+
+#six{
+border-bottom: 1px black solid;
+
+}
+
+#seven{
+border-right: 1px black solid;
+
+}
+
+#eight{
+
+border-right: 1px black solid;
+}
+
