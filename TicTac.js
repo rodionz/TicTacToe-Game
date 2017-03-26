@@ -5,11 +5,14 @@ $(function(){
 $('table').hide();
 
 
+
+
 $( "#dialog" ).dialog({
 
     dialogClass: "no-close",
-      width: 250,
-      height: 75
+      width: 350,
+      height: 110,
+      title: "TicTacToe.js"
   
 
 
