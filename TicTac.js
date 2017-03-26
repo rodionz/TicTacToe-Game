@@ -12,9 +12,8 @@ var cells = [];
 
 $('table tr').each(function(){
     $(this).find('td').each(function(){
-        //do your stuff, you can use $(this) to get current cell
         var _name = $(this).attr("id");
-        cells.push({ cell: _name,  checked : false, checkedby : null});
+        cells.push({ cell: _name,  checked : false, checkedby : null, letter : null});
     })
 })
 
@@ -28,6 +27,20 @@ $( "#dialog" ).dialog({
       title: "TicTacToe.js"  
 });
 
+
+
+
+
+function checkVictory(){
+
+
+}
+
+
+function computerMove(){
+
+  
+}
 
 
 
