@@ -4,37 +4,39 @@ $(function(){
 
 $('table').hide();
 
-
+var XorO = "";
 
 
 $( "#dialog" ).dialog({
 
     dialogClass: "no-close",
       width: 350,
-      height: 110,
-      title: "TicTacToe.js"
-  
-
-
-  
+      height: 115,
+      title: "TicTacToe.js"  
 });
 
 
 
 
 
-$('.cell').click(function(){
+$('.cell').click(function()
 
-$(this).text('X');
+{
+
+$(this).text(XorO);
 
 });
 
 
-$("#dialog").click(function(){
 
-$(this).dialog( "close");
+$(".btn").click(function()
+
+{
+XorO = $(this).text();
+$("#dialog").dialog( "close");
 $('table').show();
 
+console.log(XorO);
 });
 
 

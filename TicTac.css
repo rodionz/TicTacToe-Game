@@ -29,6 +29,13 @@ table{
   display: none;
 }
 
+
+.cell{
+
+  font-size: 28px;
+}
+
+
 #one{
 
 border-bottom: 1px black solid;
