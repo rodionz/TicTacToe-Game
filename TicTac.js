@@ -4,8 +4,21 @@ $(function(){
 
 $('table').hide();
 
-var XorO = "";
+var playerXorO = "";
 
+var computerXorO = "";
+
+var cells = [];
+
+$('table tr').each(function(){
+    $(this).find('td').each(function(){
+        //do your stuff, you can use $(this) to get current cell
+        var _name = $(this).attr("id");
+        cells.push({ cell: _name,  checked : false, checkedby : null});
+    })
+})
+
+console.log(cells);
 
 $( "#dialog" ).dialog({
 
@@ -23,20 +36,28 @@ $('.cell').click(function()
 
 {
 
-$(this).text(XorO);
+$(this).text(playerXorO);
 
 });
 
 
 
-$(".btn").click(function()
+$(".btn").click(function(){
 
-{
-XorO = $(this).text();
+if( $(this).text()=="X"){
+  playerXorO = "X";
+  computerXorO = "O"
+}
+
+else{
+  playerXorO = "O";
+  computerXorO = "X";
+}
 $("#dialog").dialog( "close");
 $('table').show();
 
-console.log(XorO);
+console.log(playerXorO);
+
 });
 
 
