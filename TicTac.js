@@ -36,43 +36,92 @@ function VictoryCheck(){
 if((cells[0].checked && cells[1].checked && cells[2].checked) && 
 cells[0].checkedby == cells[1].checkedby == cells[2].checkedby){
 
-   
+ if(cells[0].checkedby == "player"){
+   return {victory : true, winner : "player"}
+ }
   
+else{
+  return {victory : true, winner : "ai"}
+}
+
+
 }
 
 else if((cells[3].checked && cells[4].checked && cells[5].checked) && 
 cells[3].checkedby == cells[4].checkedby == cells[5].checkedby){
-  return true;
+  
+ if(cells[3].checkedby == "player"){
+   return {victory : true, winner : "player"}
+ }
+  
+else{
+  return {victory : true, winner : "ai"}
+}
+
+
 }
 
 else if((cells[6].checked && cells[7].checked && cells[8].checked) && 
 cells[6].checkedby == cells[7].checkedby == cells[8].checkedby){
-  return true;
+  
+ if(cells[6].checkedby == "player"){
+   return {victory : true, winner : "player"}
+ }
+  
+else{
+  return {victory : true, winner : "ai"}
+}
+
 }
 
 else if((cells[0].checked && cells[3].checked && cells[6].checked) &&
  cells[0].checkedby == cells[3].checkedby == cells[6].checkedby)
 {
-  return true;
+   if(cells[0].checkedby == "player"){
+   return {victory : true, winner : "player"}
+ }
+  
+else{
+  return {victory : true, winner : "ai"}
+}
 }
 
 
 else if((cells[1].checked && cells[4].checked && cells[7].checked) && 
 cells[1].checkedby == cells[4].checkedby == cells[7].checkedby){
 
+ if(cells[1].checkedby == "player"){
+   return {victory : true, winner : "player"}
+ }
+  
+else{
+  return {victory : true, winner : "ai"}
+}
 }
 
 else if((cells[2].checked && cells[5].checked && cells[8].checked) && 
  cells[2].checkedby == cells[5].checkedby == cells[8].checkedby){
 
-
+ if(cells[2].checkedby == "player"){
+   return {victory : true, winner : "player"}
+ }
+  
+else{
+  return {victory : true, winner : "ai"}
+}
 }
 
 
 else if((cells[0].checked && cells[4].checked && cells[8].checked) && 
 cells[0].checkedby == cells[4].checkedby == cells[8].checkedby){
 
-
+ if(cells[0].checkedby == "player"){
+   return {victory : true, winner : "player"}
+ }
+  
+else{
+  return {victory : true, winner : "ai"}
+}
 }
 
 
@@ -82,11 +131,21 @@ cells[0].checkedby == cells[4].checkedby == cells[8].checkedby){
 else if ((cells[2].checked && cells[4].checked && cells[6].checked) && 
 cells[2].checkedby == cells[4].checkedby == cells[6].checkedby){
 
+ if(cells[2].checkedby == "player"){
+   return {victory : true, winner : "player"}
+ }
+  
+else{
+  return {victory : true, winner : "ai"}
 }
+}
+
+
 
 else{
   return false;
 }
+
 
 
 }
