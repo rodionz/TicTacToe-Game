@@ -17,7 +17,7 @@ $('table tr').each(function(){
     })
 })
 
-console.log(cells);
+
 
 $( "#dialog" ).dialog({
 
@@ -33,8 +33,36 @@ $( "#dialog" ).dialog({
 
 function checkVictory(){
 
+if(cells[0].checked && cells[1].checked && cells[2].checked){
+
+  return true;
+}
+
+else if(cells[3].checked && cells[4].checked && cells[5].checked){
+  return true;
+}
+
+else if(cells[6].checked && cells[7].checked && cells[8].checked){
+  return true;
+}
+
+else if(cells[0].checked && cells[3].checked && cells[6].checked)
+{
+  return true;
+}
+
 
 }
+
+
+
+
+
+
+
+
+
+
 
 
 function computerMove(){
@@ -45,9 +73,17 @@ function computerMove(){
 
 
 
-$('.cell').click(function()
+$('.cell').click(function(){
 
-{
+console.log(cells);
+
+let currentID = $(this).attr("id");
+
+let currentCell = cells.find(function(x){return x.cell == currentID});
+
+currentCell.checked = true;
+
+currentCell.checkedby = "player";
 
 $(this).text(playerXorO);
 
